@@ -13,10 +13,3 @@ jobs:
         run: npm install
       - name: Run tests
         run: npm test
-      - name: Build
-        run: npm run build
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy@v1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          folder: dist
